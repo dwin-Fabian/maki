@@ -5,35 +5,25 @@
 </ion-header>
 
 <ion-content padding>
-  <center><p><img src="assets/icon/tayka.png" width="60" height="60"  > REGISTRO</p></center> 
-  <ion-item>
-    <ion-label position="floating"></ion-label>
-    <ion-input placeholder="Nombre y Apellido" type="text"  name="nom"></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating"></ion-label>
-  <ion-input  type="date"  name="date" placeholder="Fecha de Nacimiento" ></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating"></ion-label>
-  <ion-input type="number"  name="num" placeholder="Numero de Telefono" ></ion-input>
-</ion-item>
-  <ion-item>
-      <ion-label position="floating"></ion-label>
-      <ion-input [(ngModel)]="email" type="text"  name="email" placeholder="Correo Electronico" ></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating"></ion-label>
-    <ion-input [(ngModel)]="password" type="password" name="password" placeholder="Contraseña"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating"></ion-label>
-    <ion-input type="password" name="pass" placeholder="Confirmar Contraseña"></ion-input>
-  </ion-item>
+  <center><p><img src="assets/icon/tayka.png" width="40%" height="90"  > REGISTRO</p></center> 
 
-  <ion-button expand="block" (click)="OnSubmitRegister()">Crear mi cuenta</ion-button>
+  <center>
 
+  <ion-input class="content-input" placeholder="Nombre y Apellido" type="text"  name="nom"></ion-input>
+<br>
+  <ion-input class="content-input" type="date"  name="date" placeholder="Fecha de Nacimiento" ></ion-input>
+<br>
+  <ion-input class="content-input" type="number"  name="num" placeholder="Numero de Telefono" ></ion-input>
+<br>
+  <ion-input class="content-input" [(ngModel)]="email" type="text"  name="email" placeholder="Correo Electronico" ></ion-input>
+<br>
+  <ion-input class="content-input" [(ngModel)]="password" type="password" name="password" placeholder="Contraseña"></ion-input>
+<br>
+  <ion-input class="content-input" type="password" name="pass" placeholder="Confirmar Contraseña"></ion-input>
+ <br>
+  <ion-button shape="round" expand="blok" (click)="OnSubmitRegister()">Crear mi cuenta</ion-button>
 
+</center>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
