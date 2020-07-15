@@ -5,18 +5,32 @@
 </ion-header>
 
 <ion-content padding>
-  <img class= "icon" src="../assets/icon/tayka.png" alt="">
-  <ion-item>
-      <ion-label position="floating">Correo Electronico</ion-label>
-      <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Contraseña</ion-label>
-    <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
-  </ion-item>
+
+  <img class= "icon" src="../assets/icon/Frame.png" alt="">
+
+  <center><p> <span class="center-spam">Bienvenid@ a <strong>MAKY!</strong> 
+    <br>Aqui podras encontrar los servicios a domicilio que necesites, de forma, segura, rapida y facil
+  </span>
+  </p></center>
+
+<form>
+<center>
+    <ion-input class="content-input" placeholder=" Correo Electronico" type="text" [(ngModel)]="email" name="email" required></ion-input>
   <br>
-  <ion-button (click)="onSubmitLogin()" expand="block">Ingresar</ion-button>
+
+    <ion-input class="icon-ubic" slot="end" class="content-input" placeholder=" Contraseña" [(ngModel)]="password" type="password" name="password" required></ion-input>
+</center>
+
+  <br>
+  <ion-row>
+    <ion-col>
+      <center><ion-button shape="round" type="submit" (click)="onSubmitLogin()" expand="blok">Ingresar</ion-button></center>
+    </ion-col>
+  </ion-row>
+
   <br>
  <center><u style="text-align: center;" routerLink="/registro">Soy Usuario Nuevo</u></center>
-  </ion-content>
+
+</form>
+</ion-content>
   
